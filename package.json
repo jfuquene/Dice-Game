@@ -1,0 +1,23 @@
+{
+  "name": "dice-game",
+  "version": "1.0.0",
+  "description": "Dice game between two players",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfuquene/Dice-Game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jfuquene/Dice-Game/issues"
+  },
+  "homepage": "https://github.com/jfuquene/Dice-Game#readme",
+  "dependencies": {
+    "underscore": "^1.13.1"
+  }
+}
