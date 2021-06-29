@@ -41,4 +41,12 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+button {
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 20px;
+    margin: 40px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
