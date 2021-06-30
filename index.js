@@ -1,4 +1,6 @@
+document.addEventListener("DOMContentLoaded", () => {
 
+})
 let player1Score = 0 
 let player2Score = 0 
 let player1Turn = true 
@@ -45,6 +47,9 @@ rollBtn.addEventListener("click", function() {
     player1Turn = !player1Turn
 })
 
+resetBtn.addEventListener("click", function(){
+    reset()
+})
 function reset() {
     player1Score = 0
     player2Score = 0
@@ -59,3 +64,4 @@ function reset() {
     player2Dice.classList.remove("active")
     player1Dice.classList.add("active")
 }
+console.log("are we live")
