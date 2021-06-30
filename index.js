@@ -35,5 +35,12 @@ rollBtn.addEventListener("click", function() {
         player1Dice.classList.add("active")
         message.textContent = "Player 1 Turn"
     }
+    if (player1Score >= 20) {
+        message.textContent = "Player 1 Won 🥳"
+        showResetButton()
+    }  else if (player2Score >= 20) {
+        message.textContent = "Player 2 Won 🎉"
+        showResetButton()
+    }
     player1Turn = !player1Turn
 })
