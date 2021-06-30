@@ -11,6 +11,12 @@ const message = document.getElementById("message")
 const rollBtn = document.getElementById("rollBtn")
 const resetBtn = document.getElementById("resetBtn")
 
+function showResetButton() {
+    rollBtn.style.display = "none"
+    resetBtn.style.display = "block"
+}
+
+
 rollBtn.addEventListener("click", function() {
     const randomNumber = Math.floor(Math.random() * 6) + 1 // 0-5 -> 1-6
     
