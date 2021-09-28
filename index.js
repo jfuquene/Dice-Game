@@ -12,6 +12,7 @@ const player2Scoreboard = document.getElementById("player2Scoreboard")
 const message = document.getElementById("message")
 const rollBtn = document.getElementById("rollBtn")
 const resetBtn = document.getElementById("resetBtn")
+const rule = document.getElementById("rule")
 
 function showResetButton() {
     rollBtn.style.display = "none"
@@ -28,14 +29,14 @@ rollBtn.addEventListener("click", function() {
         player1Dice.textContent = randomNumber
         player1Dice.classList.remove("active")
         player2Dice.classList.add("active")
-        message.textContent = "Player 2 Turn"
+        message.textContent = "Player 2 Roll"
     } else {
         player2Score += randomNumber
         player2Scoreboard.textContent = player2Score
         player2Dice.textContent = randomNumber
         player2Dice.classList.remove("active")
         player1Dice.classList.add("active")
-        message.textContent = "Player 1 Turn"
+        message.textContent = "Player 1 Roll"
     }
     if (player1Score >= 20) {
         message.textContent = "Player 1 Won 🥳"
@@ -45,6 +46,7 @@ rollBtn.addEventListener("click", function() {
         showResetButton()
     }
     player1Turn = !player1Turn
+    title()
 })
 
 resetBtn.addEventListener("click", function(){
@@ -58,10 +60,16 @@ function reset() {
     player2Scoreboard.textContent = 0
     player1Dice.textContent = "-"
     player2Dice.textContent = "-"
-    message.textContent = "Player 1 Turn"
+    message.textContent = "Player 1 Roll"
     resetBtn.style.display = "none"
     rollBtn.style.display = "block"
     player2Dice.classList.remove("active")
     player1Dice.classList.add("active")
 }
 console.log("are we live")
+
+function title() {
+    rule.addEventListener(click, ()=>{
+        rule.style.display = "none"
+    })   
+}
